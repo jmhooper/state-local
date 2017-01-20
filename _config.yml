@@ -1,0 +1,68 @@
+# Site settings
+title: State and Local Government Assistance | TTS Office of Acquisitions
+description: TTS Office of Acquisitions work with state and local governments.
+baseurl: "" # the subpath of your site, e.g. /blog/
+url: "https://state-local.18f.gov" # the base hostname & protocol for your site
+logo: /assets/img/TTS-logo.png
+feature_image: /assets/img/feature-background.jpg
+
+colors:
+  background: '#ffffff'
+  button:
+    background: '#0071bc'
+    hover: '#3e94cf'
+    text: '#fff'
+  headers: '#205493'
+  text: '#212121'
+  projects:
+    accent: '#02bfe7'
+  banner:
+    background: '#112e51'
+    text: '#fff'
+    button:
+      background: '#dce4ef'
+      text: '#112e51'
+  footer:
+    background: '#323a45'
+    text: '#fff'
+
+analytics:
+  google:
+    code: 'UA-48605964-19' # Change this to your GSA analytics code
+  dap:
+    agency: GSA    # Change this to your agency
+    subagency: 18F # Change this to your agency
+
+defaults:
+ -
+  scope:
+    path: "" # an empty string here means all files in the project
+  values:
+    layout:
+      - home
+      - page
+      - "project-list"
+      - project
+
+forms:
+- type: newsletter
+  heading: <a href="http://eepurl.com/bJQHFr">Want to know when this guide is updated?</a>
+  url: http://eepurl.com/bJQHFr
+  button: Subscribe
+  privacypolicy: Your privacy and security are important to us, we'll only share your information as described in the <a href="http://www.gsa.gov/portal/content/116609">GSA Privacy and Security Notice</a>
+
+footer:
+  image: /assets/img/gsa-logo-dark.jpg
+  email:
+  twitter:
+    - 18f
+  text: This site was built using <a href="https://federalist.18f.gov/" target="_blank">Federalist, from 18F</a>. Take a look at <a href="https://github.com/18F/Modular-Contracting-And-Agile-Development">the Github repo for this site</a>. # Change to a tag line for your agency
+
+# Build settings
+markdown: kramdown
+include:
+  - _navigation.json
+exclude:
+  - CONTRIBUTING.md
+  - LICENSE.md
+  - README.md

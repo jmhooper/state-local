@@ -1,0 +1,36 @@
+.hero-unit {
+  background-size: cover;
+  background-repeat: no-repeat;
+  min-height: 32em;
+  position: relative;
+}
+.hero-content {
+  background-color: transparentize($text-color, .6);
+  padding: 10px;
+  text-align: center;
+  position: absolute;
+  top: 50px;
+  width: 74%;
+  left: 13%;
+  right: 13%;
+
+  @media screen and (max-width: $on-palm) {
+     padding: 10px;
+  }
+}
+.hero-content h1 {
+  color: white;
+  font-size: 30px;
+  font-weight: 100;
+  line-height: 50px;
+  margin: 0;
+
+  @media screen and (max-width: $on-palm) {
+     font-size: 20px;
+     line-height: 30px;
+  }
+}
+.hero-content .usa-button {
+  font-size: 22px;
+  line-height: 30px;
+}
